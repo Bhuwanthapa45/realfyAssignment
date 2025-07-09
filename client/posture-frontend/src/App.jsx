@@ -16,10 +16,10 @@ export default function App() {
     form.append("video", blob, "capture.webm");
 
     try {
-      const res = await fetch("http://localhost:3001/api/analyze", {
-        method: "POST",
-        body: form,
-      });
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/analyze`, {
+  method: "POST",
+  body: form,
+});;
 
       const data = await res.json();
       setFeedback(data.feedback);
