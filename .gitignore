@@ -3,7 +3,7 @@ client/node_modules/
 server/node_modules/
 client/build/
 server/.env
-client/.env
+client/posture-frontend/.env
 
 server/venv/
 *.pyc
