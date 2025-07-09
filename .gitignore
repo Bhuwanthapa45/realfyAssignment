@@ -4,3 +4,8 @@ server/node_modules/
 client/build/
 server/.env
 client/.env
+
+server/venv/
+*.pyc
+__pycache__/
+uploads/
