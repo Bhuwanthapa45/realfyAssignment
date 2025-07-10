@@ -4,6 +4,8 @@ server/node_modules/
 client/build/
 server/.env
 client/.env
+posture-python-api/.env
+
 
 server/venv/
 *.pyc
