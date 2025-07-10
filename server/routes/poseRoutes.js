@@ -1,5 +1,5 @@
 const express = require('express');
-const { analyzePosture, getProcessedVideo } = require('../controllers/poseController');
+const { analyzePosture} = require('../controllers/poseController');
 
 const router = express.Router();
 
@@ -7,6 +7,6 @@ const router = express.Router();
 router.post('/analyze', analyzePosture);
 
 // Optional  serve local videos
-router.get('/video/:filename', getProcessedVideo);
+// router.get('/video/:filename', getProcessedVideo);
 
 module.exports = router;
