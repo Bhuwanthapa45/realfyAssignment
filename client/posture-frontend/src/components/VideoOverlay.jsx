@@ -10,7 +10,7 @@ export default function VideoOverlay({ videoUrl, frames, onFrameChange }) {
     setCurrentTime(state.playedSeconds);
     const frameIndex = Math.floor(state.playedSeconds * 30); // assuming 30 fps
     onFrameChange(frameIndex);
-  };
+  }
 
   const currentFrame = Math.floor(currentTime * 30);
   const frameData = Array.isArray(frames) ? frames[currentFrame] : null;
