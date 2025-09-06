@@ -30,7 +30,7 @@ export default function VideoOverlay({ videoUrl, frames, onFrameChange }) {
       ctx.fillStyle = "#FF3B3B";
       ctx.fill();
     });
-  }, [frameData]);
+  }, [frameData])
 
   return (
     <div className="relative w-full max-w-3xl mx-auto">
